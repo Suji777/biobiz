@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact BioBiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+        }
+        .custom-container {
+            margin-top: 50px;
+        }
+        .form-title {
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+        .form-description {
+            font-size: 1rem;
+            color: #333;
+        }
+        .contact-image {
+            position: relative;
+            max-width: 100%;
+        }
+        .background-shape {
+            position: absolute;
+            z-index: -1;
+        }
+        .pink-shape {
+            top: -20px;
+            left: -20px;
+            background-color: #f06292;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .yellow-shape {
+            bottom: 0;
+            left: 0;
+            background-color: #ffd54f;
+            height: 50px;
+            width: 100px;
+        }
+        .submit-btn {
+            background-color: #ffd54f;
+            border: none;
+            font-weight: bold;
+            color: #000;
+        }
+        .submit-btn:hover {
+            background-color: #ffc107;
+        }
+        .address-section {
+            background-color: #4a3f8f;
+            color: white;
+            padding: 50px 30px;
+        }
+        .address-details {
+            line-height: 2;
+        }
+        .map {
+            width: 100%;
+            border: none;
+            height: 250px;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        .contact-card {
+            background-color: #4a3f8f; /* Card background color */
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px; /* Smooth corners */
+            transition: transform 0.3s ease-in-out;
+        }
+        .contact-card:hover {
+            transform: translateY(-10px); /* Lift card on hover */
+        }
+        .contact-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        h5 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid">
+            <!-- Logo at the Start -->
+            <a class="navbar-brand" href="#">
+                <img src="images/biobiz-logo.png" alt="BioBiz Logo" class="d-inline-block align-text-top" 
+                     style="height: 50px; width: auto;">
+            </a>
+    
+            <!-- Toggler Button -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="india_updates.html">India Updates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Opportunity.html">Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="consulting.html">BioBiz Consulting</a></li>
+                    <li class="nav-item"><a class="nav-link" href="innovation.html">Innovation Insights</a></li>
+    
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="insightsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Insights
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="insightsDropdown">
+                            <li><a class="dropdown-item" href="#">Bioenergy</a></li>
+                            <li><a class="dropdown-item" href="#">Environmental Solutions</a></li>
+                            <li><a class="dropdown-item" href="#">Bio Products</a></li>
+                            <li><a class="dropdown-item" href="#">Bio-based Science & Tech Pathways</a></li>
+                            <li><a class="dropdown-item" href="#">Regional Biomass Residues</a></li>
+                            <li><a class="dropdown-item" href="#">India Biomass Residues</a></li>
+                            <li><a class="dropdown-item" href="#">Indian Bioeconomy</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item"><a class="nav-link" href="bring.html">BRING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container custom-container">
+        <div class="row">
+            <!-- Left Side: Image Section -->
+            <div class="col-md-6 position-relative">
+                <div class="background-shape pink-shape"></div>
+                <div class="background-shape yellow-shape"></div>
+                <img src="images/contact_bio.jpeg" alt="Contact Illustration" class="img-fluid contact-image">
+            </div>
+
+            <!-- Right Side: Form Section -->
+            <div class="col-md-6">
+                <h1 class="form-title">Contact BioBiz</h1>
+                <p class="form-description">
+                    BioBiz is a division of <a href="https://www.eai.in" target="_blank" class="text-primary">EAI (Energy Alternatives India)</a>, India’s leading market & management consulting firm for clean energy, cleantech & environmental sustainability.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="text-uppercase">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-uppercase">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="text-uppercase">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn px-4">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Left Side: Google Map -->
+            <div class="col-md-6 p-0">
+                <iframe
+                    class="map"
+                    src="https://www.google.com/maps?q=No+41,+Nungambakkam+High+Road,+Chennai,+Tamil+Nadu,+India&output=embed"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+            <!-- Right Side: Address Section -->
+            <div class="col-md-6 address-section">
+                <h2>Address</h2>
+                <div class="address-details">
+                    <p>A5C, Anugraha Apartments</p>
+                    <p>No 41, Nungambakkam High Road</p>
+                    <p>Nungambakkam</p>
+                    <p>Chennai – 600034, Tamil Nadu, India</p>
+                    <p><strong>Landmark:</strong> Building right next to the Taj Coromandel hotel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <!-- Phone Card -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card">
+                    <img src="images/phone.png" alt="Phone Icon">
+                    <h5>Phone</h5>
+                    <p>80157 25600</p>
+                </div>
+            </div>
+            <!-- Email Card -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card">
+                    <img src="images/mailcontact.png" alt="Email Icon">
+                    <h5>Email</h5>
+                    <p>ask@biobiz.in</p>
+                </div>
+            </div>
+            <!-- LinkedIn Card -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card">
+                    <img src="images/linkedincontact.png" alt="LinkedIn Icon">
+                    <h5>LinkedIn</h5>
+                    <p>
+                        linkedin.com/showcase/biobizindia/
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-icons">
+        <a href="#"><img src="images/whatsapp_sticky.png" alt="WhatsApp"></a>
+        <a href="#"><img src="images/linkedin_sticky.png" alt="LinkedIn"></a>
+        <a href="#"><img src="images/telegram_sticky.png" alt="Telegram"></a>
+        <a href="#"><img src="images/facebook_sticky.png" alt="Facebook"></a>
+        <a href="#"><img src="images/mail_sticky.png" alt="Email"></a>
+      </div>
+      <footer>Copyright &copy 2024 BioBiz. All rights reserved.</footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container-fluid .nav-item{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.container-fluid .nav-item .nav-link{
+    text-decoration: none;
+    color: rgb(6, 102, 30);
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+/* Carousel Container */
+#videoCarousel .carousel-inner {
+    height: auto; /* Set the height to 90% of the viewport height */
+}
+
+/* Video Styling */
+#videoCarousel .carousel-item video {
+    object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+    height: 100%; /* Make the video fill the height of the carousel */
+    width: 100%; /* Ensure the video stretches to the full width */
+}
+.container-text {
+    width: 100%;
+   
+    background: rgb(190, 192, 194);
+    padding: 60px 80px; /* Add padding around the text */
+    text-align:center; 
+    justify-content: flex-start;
+}
+
+.para-home {
+    margin-bottom: 1.5rem; /* Add spacing between paragraphs */
+    line-height: 1.8; /* Improve readability with line spacing */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+    text-align: left; /* Align text to the left */
+    font-style:normal;
+    font-weight: 550;
+    font-size: 18px;
+    
+}
+.text-center{
+    margin-top: 5%;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+.text-center h4{
+    color:rgb(15, 15, 90);
+    text-decoration: none;
+    list-style: none;
+}
+.main-sections a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.link{
+  color: #007bff;
+  
+}
+.scroll-container{
+    display: flex;
+    margin-top: 5%;
+    width: 300px;
+    height: 400px;
+    background-color: #00FFB2;
+    color: #006644;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    
+}
+
+.scroll-title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    justify-content:center;
+
+}
+.scroll-title a{
+    text-decoration: none;
+    color: black;
+}
+
+.scroll-list {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    animation: scroll 20s linear infinite;
+   
+}
+
+.scroll-list li {
+    padding: 5px 0;
+    font-size: 14px;
+    text-decoration: none;
+   
+   
+}
+.scroll-list a{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+@keyframes  scroll {
+  from {
+      transform: translateY(5);
+  }
+  to {
+      transform: translateY(-100%);
+  }
+}
+
+
+@media (min-width: 768px) { /* For larger screens */
+    .main-sections {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.other-section{
+    width: 100%;
+    background-color: #ff7b00;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .section-title {
+   
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  
+    /* For smaller screens (e.g., mobile) */
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  }
+  
+  .section-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .footer-text {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 5%;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  .sticky-icons {
+    position: fixed;
+    top: 30%; 
+    left: 20px; 
+    z-index: 1000; 
+  }
+  
+  .sticky-icons a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .sticky-icons img {
+    width: 30px; 
+  }
+  .about-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
